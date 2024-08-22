@@ -36,7 +36,7 @@ jobs:
               id: meta
               uses: docker/metadata-action@v5
               with:
-                images: ghcr.io/${{ github.repository }}/maildev${{steps.extract_release.outputs.VERSION}}-tls
+                images: ghcr.io/${{ github.repository }}/maildev-tls
       
             - name: Checkout code
               uses: actions/checkout@v3
