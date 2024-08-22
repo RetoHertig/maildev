@@ -24,11 +24,6 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
 
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v1
-              with:
-                  node-version: ${{ matrix.node-version }}
-
             - name: Extract the version and commit body from the tag
               id: extract_release
               # The body may be multiline, therefore newlines and % need to be escaped
