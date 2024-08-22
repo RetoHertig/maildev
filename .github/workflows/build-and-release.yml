@@ -3,8 +3,6 @@ name: Build and Release
 # Run this job on all pushes to master with tags with a semantic version
 on:
     push:
-        branches:
-            - 'master'
         tags:
             # normal versions
             - 'v[0-9]+.[0-9]+.[0-9]+'
